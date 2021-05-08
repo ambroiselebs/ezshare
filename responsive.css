@@ -1,0 +1,43 @@
+@media screen and (max-width: 375px) {
+
+    .about {
+        font-size: 12px;
+    }
+
+    .download-form {
+        height: 1vh;
+    }
+
+}
+
+@media screen and (max-width: 1502px) {
+    
+    .success_div {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .success_div {
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (max-width: 874px) {
+    
+    .success_div {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 783px) {
+
+    body {
+        background: url(assets/background-phone.png);
+    }
+
+}

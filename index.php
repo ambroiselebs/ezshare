@@ -43,9 +43,13 @@
 
             <br><br><br><br><br><br>
 
-            <center><input type="submit" value="UPLOAD" name="upload" class="btn-upload" /></center>
+            <center><input type="submit" value="UPLOAD" name="upload" class="btn-upload" onclick="upload_load()" /></center>
 
         </form>
+
+        <br><br><br>
+
+        <center><i class="fas fa-spinner fa-pulse fa-3x loading-upload-hide" id="load"></i></center>
 
     </div>
 
@@ -83,16 +87,27 @@ if(@$_FILES['file']['name'] == null) {
     return;
 } else {
 
+    function generateRandomString($length = 10) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+    
+    $randomId = generateRandomString();
+
     if (isset($_POST['upload'])){
 
         $name = $_FILES['file']['name'];
         
         $tmp = $_FILES['file']['tmp_name'];
         
-        
         move_uploaded_file($tmp, "files/".$name);
-        
-        $sql = "INSERT INTO files (name) VALUES ('$name')";
+
+        $sql = "INSERT INTO files (id, name) VALUES ('$randomId', '$name')";
         $res =  mysqli_query($con, $sql);
       
         if ($res == 1){

@@ -271,3 +271,13 @@ body {
     bottom: 1%;
     transform: translate(-50%, -1%);
 }
+
+.loading-upload-hide {
+    display: none;
+    opacity: 0;
+}
+
+.loading-upload-show {
+    display: block;
+    opacity: 1;
+}

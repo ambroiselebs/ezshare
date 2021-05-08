@@ -9,3 +9,8 @@ function hideupload() {
     document.getElementById('upload-div').classList.add("upload");
     document.getElementById('contents').classList.remove("blur");
 }
+
+function upload_load() {
+    document.getElementById('load').classList.remove("loading-upload-hide");
+    document.getElementById('load').classList.add("loading-upload-show");
+}

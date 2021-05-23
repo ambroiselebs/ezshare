@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/297d0f38aa.js" ></script>
+    <meta name="keywords" content="ez, share, ezshare, EZ, Ez, Share, Partager, partager, easy, facile, wetransfer, company, files, file, fichiers, fichier, random, aléatoire">
+    <meta name="description" content="An easy way to share files with people. Ez Share is easy, fats and secure. To try it is not to do without it">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js"></script>
     <link rel="shortcut icon" type="image/png" href="assets/icon.png"/>

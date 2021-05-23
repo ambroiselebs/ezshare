@@ -10,6 +10,7 @@
     <script src="script.js"></script>
     <link rel="shortcut icon" type="image/png" href="assets/icon.png"/>
     <link rel="stylesheet" href="responsive.css">
+    <script data-ad-client="ca-pub-2153143190486464" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <title>Ez Share | Home</title>
 </head>
 <body>
@@ -126,7 +127,7 @@ if(@$_FILES['file']['name'] == null) {
             
             <div class='success_div'>
                 <h2 class='success-title'>The file has been successfully uploaded !</h2>
-                <a href='file.php?id=".$id."'>Click here to download your file</a>
+                <a href='file.php?id=".$randomId."'>Click here to download your file</a>
             </div>
             
             ";

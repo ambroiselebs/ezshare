@@ -13,21 +13,16 @@
 
         $id = $_GET['id'];
 
-        $sql = "SELECT name FROM files WHERE id='$id'";
-        $res = mysqli_query($con,$sql);
+        $res = $conn->query("SELECT name FROM files WHERE id='$id'");
 
-        $row = mysqli_fetch_assoc($res);
+        echo "<div class='download-form'>";
 
-        $name = $row['name'];
+        while($row = $res->fetch_assoc()) {
 
-    
-        echo 
-        "
-        
-        <div class='download-form'>
-            <h2 class='file-name'>".$name."</h2>
-        
-        ";
+            $name = $row['name'];
+
+            echo "<h2 class='file-name'>".$row['name']."</h2>";
+        }
 ?>
 
     <br>
@@ -68,12 +63,10 @@ function docopy() {
     try {
         var result = document.execCommand('copy');
         if (result) {
-            // La copie a réussi
             alert('The link has been copied');
         }
     }
     catch(err) {
-        // Une erreur est surevnue lors de la tentative de copie
         alert(err);
     }
 

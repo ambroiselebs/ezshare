@@ -187,7 +187,7 @@ body {
 }
 
 .download-to-back {
-    height: 23vh;
+    height: 17vh;
 }
 
 .btn-back_home {
@@ -280,4 +280,8 @@ body {
 .loading-upload-show {
     display: block;
     opacity: 1;
+}
+
+.warning_days {
+    color: #9b59b6;
 }

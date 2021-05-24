@@ -128,4 +128,19 @@ if(@$_FILES['file']['name'] == null) {
 
 }
 
+$x = 140;  // 6 hours - 1*60*60
+$current_time = time();
+$path = './files/';
+ 
+$files = glob($path.'/*.*');
+foreach($files as $file) {
+ $file_creation_time = filemtime($file);
+ $difference = $current_time - $file_creation_time;
+  if(is_file($file)) {
+    if ($difference >= $x) {
+      unlink($file);
+    }
+  }
+}
+
 ?>

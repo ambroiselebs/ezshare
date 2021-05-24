@@ -28,10 +28,15 @@
     <br>
     <a href="files/<?php echo $name; ?>" class="link-download" download="files/<?php echo $name; ?>"><button class="btn-download">Download</button></a>
 
-        <br><br><br><br>
+        <br><br>
+        <br><br>
 
         <span class="link-copy" id="tocopy">https://ezhub.tk/ezshare/file.php?id=<?php echo $id; ?></span>
         <input type="button" value="Copy" class="js-copy" data-target="#tocopy">
+
+        <br><br><br>
+
+        <h3 class="warning_days">your file will be deleted 2 days after sending</h3>
 
         <section class="download-to-back"></section>  
 

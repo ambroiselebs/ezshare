@@ -11,21 +11,21 @@ JS
 
 **------------------------------------------------**
 
-https://ezshare.tk/
-https://discord.me/ezcorp/
+🌐 - https://ezshare.tk/
+🕹️ - https://discord.me/ezcorp/
 
 **------------------------------------------------**
 
 /!\ automatic deletion is done with a server-side bash script /!\
 
-delete.sh
+🗑️ - delete.sh
 ```
 
 find /var/www/html/ezshare/files/ -type f -mtime +2 -delete
 
 ```
 
-run.sh
+⏲️ - run.sh
 ```
 
 while true

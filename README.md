@@ -20,6 +20,7 @@ https://discord.me/ezcorp/
 
 delete.sh
 ```
+
 find /var/www/html/ezshare/files/ -type f -mtime +2 -delete
 
 ```

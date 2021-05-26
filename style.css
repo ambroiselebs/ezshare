@@ -146,6 +146,25 @@ body {
     text-align: center;
 }
 
+.error_div {
+    background: #EA2027;
+    color: #fff;
+    width: 30%;
+    height: 10vh;
+    text-align: center;
+    opacity: .8;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%);
+    margin: 10px;
+    z-index: 100;
+}
+
+.error-title {
+    text-align: center;
+}
+
 .label-upload {
     background: #9b59b6;
     border: #9b59b6 3px solid;

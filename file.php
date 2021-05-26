@@ -10,7 +10,7 @@
     include('includes/dbh.inc.php');
 
     if(isset($_GET['id'])) {
-
+        
         $id = $_GET['id'];
 
         $res = $conn->query("SELECT name FROM files WHERE id='$id'");

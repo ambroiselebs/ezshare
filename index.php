@@ -118,8 +118,15 @@ if(@$_FILES['file']['name'] == null) {
                 <a href='file.php?id=".$randomId."'>Click here to download your file</a>
             </div>";
         } catch (mysqli_sql_exception $e) {
-            echo "MySQLi Error Code: " . $e->getCode() . "<br />";
-            echo "Exception Msg: " . $e->getMessage();
+
+            echo "
+            
+            <div class='error_div'>
+                <h2 class='error-title'>An error occurred while uploading the file !</h2>
+                <h3 class='error-solution'>Try to change the name of your file.</h3>
+            </div>
+            
+            ";
             exit;
         }
 

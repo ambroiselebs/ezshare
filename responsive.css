@@ -16,6 +16,10 @@
         font-size: 12px;
     }
 
+    .error_div {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -24,11 +28,19 @@
         font-size: 9px;
     }
 
+    .error_div {
+        font-size: 9px;
+    }
+
 }
 
 @media screen and (max-width: 874px) {
     
     .success_div {
+        font-size: 8px;
+    }
+
+    .error_div {
         font-size: 8px;
     }
 

@@ -31,7 +31,7 @@
         <br><br>
         <br><br>
 
-        <span class="link-copy" id="tocopy">https://ezhub.tk/ezshare/file.php?id=<?php echo $id; ?></span>
+        <span class="link-copy" id="tocopy">https://ezshare.tk/ezshare/file.php?id=<?php echo $id; ?></span>
         <input type="button" value="Copy" class="js-copy" data-target="#tocopy">
 
         <br><br><br>
